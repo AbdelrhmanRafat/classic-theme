@@ -1,422 +1,70 @@
-/* === Google Material Design 3 Modern Theme === */
+/* === Deep Ocean Blue Theme Design Tokens === */
 :root {
   
-  /* === Google Color System === */
-  --classic-color-primary: #1a73e8;
-  --classic-color-primary-light: #4285f4;
-  --classic-color-primary-dark: #1557b0;
+  /* === Color System === */
+  --classic-color-primary: #1e40af;
+  --classic-color-primary-light: #3b82f6;
+  --classic-color-primary-dark: #1e3a8a;
   --classic-color-on-primary: #ffffff;
-  --classic-color-secondary: #5f6368;
-  --classic-color-secondary-light: #80868b;
-  --classic-color-secondary-dark: #3c4043;
+
+  --classic-color-secondary: #0891b2;
+  --classic-color-secondary-light: #06b6d4;
+  --classic-color-secondary-dark: #0e7490;
   --classic-color-on-secondary: #ffffff;
-  --classic-color-tertiary: #137333;
-  --classic-color-tertiary-light: #34a853;
-  --classic-color-tertiary-dark: #0d652d;
+
+  --classic-color-tertiary: #374151;
+  --classic-color-tertiary-light: #6b7280;
+  --classic-color-tertiary-dark: #1f2937;
   --classic-color-on-tertiary: #ffffff;
-  --classic-color-error: #d93025;
-  --classic-color-error-light: #ea4335;
-  --classic-color-error-dark: #b52d20;
+
+  --classic-color-error: #dc2626;
+  --classic-color-error-light: #ef4444;
+  --classic-color-error-dark: #b91c1c;
   --classic-color-on-error: #ffffff;
-  --classic-color-success: #137333;
-  --classic-color-success-light: #34a853;
-  --classic-color-success-dark: #0d652d;
+
+  --classic-color-success: #059669;
+  --classic-color-success-light: #10b981;
+  --classic-color-success-dark: #047857;
   --classic-color-on-success: #ffffff;
-  --classic-color-warning: #f9ab00;
-  --classic-color-warning-light: #fbbc04;
-  --classic-color-warning-dark: #e37400;
-  --classic-color-on-warning: #000000;
-  --classic-color-info: #1a73e8;
-  --classic-color-info-light: #4285f4;
-  --classic-color-info-dark: #1557b0;
+
+  --classic-color-warning: #d97706;
+  --classic-color-warning-light: #f59e0b;
+  --classic-color-warning-dark: #b45309;
+  --classic-color-on-warning: #ffffff;
+
+  --classic-color-info: #0284c7;
+  --classic-color-info-light: #0ea5e9;
+  --classic-color-info-dark: #0369a1;
   --classic-color-on-info: #ffffff;
-  
+
   /* === Surface Colors === */
-  --classic-color-surface: #ffffff;
-  --classic-color-surface-variant: #f8f9fa;
-  --classic-color-surface-container: #f1f3f4;
-  --classic-color-surface-container-high: #e8eaed;
-  --classic-color-on-surface: #202124;
-  --classic-color-on-surface-variant: #5f6368;
-  
+  --classic-color-surface: #f8fafc;
+  --classic-color-surface-variant: #f1f5f9;
+  --classic-color-surface-container: #e2e8f0;
+  --classic-color-surface-container-high: #cbd5e1;
+  --classic-color-on-surface: #0f172a;
+  --classic-color-on-surface-variant: #475569;
+
   /* === Background === */
   --classic-color-background: #ffffff;
-  --classic-color-on-background: #202124;
-  
+  --classic-color-on-background: #1e293b;
+
   /* === Outline Colors === */
-  --classic-color-outline: #dadce0;
-  --classic-color-outline-variant: #e8eaed;
-  --classic-color-outline-focus: #1a73e8;
-  
-  /* === Google Background Pattern === */
-  --classic-background-image: 
-    radial-gradient(circle at 20% 80%, rgba(26, 115, 232, 0.02) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(66, 133, 244, 0.015) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(52, 168, 83, 0.008) 0%, transparent 50%);
+  --classic-color-outline: #94a3b8;
+  --classic-color-outline-variant: #cbd5e1;
+  --classic-color-outline-focus: var(--classic-color-primary);
+
+  /* === Background Pattern === */
+  --classic-background-image: url('/assets/backgrounds/ocean-waves-pattern.svg');
   
   /* Section Variables */
-  --classic-section-radius: 12px;
-  --classic-section-padding: 24px;
-  --classic-section-shadow: 
-    0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --classic-section-radius: 1rem;       /* Tailwind: rounded-2xl */
+  --classic-section-padding: 1.25rem;   /* Tailwind: p-5 */
+  --classic-section-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15); /* Ocean blue themed shadow */
   
   /* Header Section Variables */
-  --classic-header-size: 28px;
-  --classic-header-gap: 16px;
-  --classic-header-margin-bottom: 20px;
-  --classic-header-weight: 400;
-}
-
-/* === Google Material Animations === */
-@keyframes materialElevation {
-  from {
-    box-shadow: 
-      0 1px 2px 0 rgba(60, 64, 67, 0.3),
-      0 1px 3px 1px rgba(60, 64, 67, 0.15);
-  }
-  to {
-    box-shadow: 
-      0 1px 3px 0 rgba(60, 64, 67, 0.3),
-      0 4px 8px 3px rgba(60, 64, 67, 0.15);
-  }
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.6;
-  }
-  20% {
-    transform: scale(0.1);
-    opacity: 0.6;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* === Base Google Styles === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--classic-color-background);
-  background-image: var(--classic-background-image);
-  color: var(--classic-color-on-background);
-  font-family: 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* === Google Web Fonts === */
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
-
-/* === Section Styles === */
-.section {
-  background: var(--classic-color-surface);
-  border-radius: var(--classic-section-radius);
-  padding: var(--classic-section-padding);
-  box-shadow: var(--classic-section-shadow);
-  border: 1px solid var(--classic-color-outline);
-  position: relative;
-  margin: 16px;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  animation: fadeIn 0.3s ease-out;
-}
-
-.section:hover {
-  box-shadow: 
-    0 1px 3px 0 rgba(60, 64, 67, 0.3),
-    0 4px 8px 3px rgba(60, 64, 67, 0.15);
-  transform: translateY(-1px);
-}
-
-/* === Header Styles === */
-.header {
-  font-family: 'Google Sans', sans-serif;
-  font-size: var(--classic-header-size);
-  font-weight: var(--classic-header-weight);
-  margin-bottom: var(--classic-header-margin-bottom);
-  color: var(--classic-color-on-surface);
-  line-height: 1.25;
-  letter-spacing: 0;
-}
-
-/* === Google Button Styles === */
-.button {
-  background: var(--classic-color-primary);
-  color: var(--classic-color-on-primary);
-  border: none;
-  border-radius: 4px;
-  padding: 10px 24px;
-  font-family: 'Google Sans', 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  box-shadow: 
-    0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
-  overflow: hidden;
-  text-transform: none;
-  letter-spacing: 0.25px;
-  min-width: 64px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button:hover {
-  box-shadow: 
-    0 1px 3px 0 rgba(60, 64, 67, 0.3),
-    0 4px 8px 3px rgba(60, 64, 67, 0.15);
-  background: var(--classic-color-primary-dark);
-}
-
-.button:active {
-  background: var(--classic-color-primary-dark);
-  box-shadow: 
-    0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
-}
-
-/* Google Material Ripple Effect */
-.button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
-}
-
-.button:active::before {
-  width: 300px;
-  height: 300px;
-  transition: width 0s, height 0s;
-}
-
-/* === Secondary Button === */
-.button-outlined {
-  background: transparent;
-  color: var(--classic-color-primary);
-  border: 1px solid var(--classic-color-outline);
-  border-radius: 4px;
-  padding: 9px 23px;
-  font-family: 'Google Sans', 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  box-shadow: none;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.25px;
-}
-
-.button-outlined:hover {
-  background: rgba(26, 115, 232, 0.04);
-  border-color: var(--classic-color-primary);
-}
-
-.button-outlined:active {
-  background: rgba(26, 115, 232, 0.12);
-}
-
-/* === Text Button === */
-.button-text {
-  background: transparent;
-  color: var(--classic-color-primary);
-  border: none;
-  border-radius: 4px;
-  padding: 10px 8px;
-  font-family: 'Google Sans', 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  box-shadow: none;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.25px;
-  min-width: 64px;
-}
-
-.button-text:hover {
-  background: rgba(26, 115, 232, 0.04);
-}
-
-.button-text:active {
-  background: rgba(26, 115, 232, 0.12);
-}
-
-/* === Google Input Fields === */
-.input {
-  background: var(--classic-color-surface);
-  border: 1px solid var(--classic-color-outline);
-  border-radius: 4px;
-  padding: 12px 16px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: var(--classic-color-on-surface);
-  transition: all 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
-  outline: none;
-  width: 100%;
-  height: 48px;
-}
-
-.input:focus {
-  border-color: var(--classic-color-primary);
-  border-width: 2px;
-  padding: 11px 15px; /* Adjust for thicker border */
-}
-
-.input::placeholder {
-  color: var(--classic-color-on-surface-variant);
-}
-
-/* === Google Cards === */
-.card {
-  background: var(--classic-color-surface);
-  border-radius: 8px;
-  padding: 16px;
-  border: 1px solid var(--classic-color-outline);
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  box-shadow: 
-    0 1px 2px 0 rgba(60, 64, 67, 0.3),
-    0 1px 3px 1px rgba(60, 64, 67, 0.15);
-}
-
-.card:hover {
-  box-shadow: 
-    0 1px 3px 0 rgba(60, 64, 67, 0.3),
-    0 4px 8px 3px rgba(60, 64, 67, 0.15);
-}
-
-/* === Text Styles === */
-.text-primary {
-  color: var(--classic-color-primary);
-  font-weight: 500;
-}
-
-.text-secondary {
-  color: var(--classic-color-on-surface-variant);
-  font-weight: 400;
-}
-
-.text-tertiary {
-  color: var(--classic-color-tertiary);
-  font-weight: 500;
-}
-
-/* === Google Material Chips === */
-.chip {
-  background: var(--classic-color-surface-variant);
-  color: var(--classic-color-on-surface);
-  border: 1px solid var(--classic-color-outline);
-  border-radius: 16px;
-  padding: 6px 12px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  display: inline-flex;
-  align-items: center;
-  height: 32px;
-  cursor: pointer;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-.chip:hover {
-  background: var(--classic-color-surface-container);
-}
-
-.chip.selected {
-  background: var(--classic-color-primary);
-  color: var(--classic-color-on-primary);
-  border-color: var(--classic-color-primary);
-}
-
-/* === Google FAB === */
-.fab {
-  background: var(--classic-color-primary);
-  color: var(--classic-color-on-primary);
-  border: none;
-  border-radius: 16px;
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
-  cursor: pointer;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
-  box-shadow: 
-    0 3px 5px -1px rgba(60, 64, 67, 0.3),
-    0 6px 10px 0 rgba(60, 64, 67, 0.15),
-    0 1px 18px 0 rgba(60, 64, 67, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fab:hover {
-  box-shadow: 
-    0 5px 5px -3px rgba(60, 64, 67, 0.3),
-    0 8px 10px 1px rgba(60, 64, 67, 0.15),
-    0 3px 14px 2px rgba(60, 64, 67, 0.12);
-  transform: scale(1.05);
-}
-
-/* === Google Grid === */
-.grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
-
-/* === Responsive === */
-@media (max-width: 768px) {
-  .section {
-    margin: 8px;
-    padding: 16px;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  
-  .fab {
-    bottom: 8px;
-    right: 8px;
-  }
+  --classic-header-size: 1.875rem;         /* Tailwind: text-3xl */
+  --classic-header-gap: 0.75rem;
+  --classic-header-margin-bottom: 1.5rem;
+  --classic-header-weight: 500;
 }
