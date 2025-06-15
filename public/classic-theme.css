@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Thin.woff2') format('woff2'),
-       url('PingARLT-Thin.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Thin.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,17 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-ExtraLight.woff2') format('woff2'),
-       url('PingARLT-ExtraLight.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Hairline.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Hairline.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('/fonts/pingarlt/PingARLT-ExtraLight.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-ExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -18,8 +27,8 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Light.woff2') format('woff2'),
-       url('PingARLT-Light.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Light.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -27,8 +36,8 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Regular.woff2') format('woff2'),
-       url('PingARLT-Regular.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Regular.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -36,8 +45,8 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Medium.woff2') format('woff2'),
-       url('PingARLT-Medium.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Medium.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,8 +54,8 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Bold.woff2') format('woff2'),
-       url('PingARLT-Bold.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Bold.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -54,8 +63,8 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Heavy.woff2') format('woff2'),
-       url('PingARLT-Heavy.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Heavy.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Heavy.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -63,24 +72,15 @@
 
 @font-face {
   font-family: 'PingARLT';
-  src: url('PingARLT-Black.woff2') format('woff2'),
-       url('PingARLT-Black.woff') format('woff');
+  src: url('/fonts/pingarlt/PingARLT-Black.woff2') format('woff2'),
+       url('/fonts/pingarlt/PingARLT-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'PingARLT';
-  src: url('PingARLT-Hairline.woff2') format('woff2'),
-       url('PingARLT-Hairline.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  font-family: 'PingARLT';
+  font-family: 'PingARLT', sans-serif;
 }
 /* === Deep Ocean Blue Theme Design Tokens === */
 :root {
