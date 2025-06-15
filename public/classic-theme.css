@@ -1,70 +1,276 @@
-/* === Deep Ocean Blue Theme Design Tokens === */
+/* === Neon Cyber Funk Theme Design Tokens === */
 :root {
   
   /* === Color System === */
-  --classic-color-primary: #1e40af;
-  --classic-color-primary-light: #3b82f6;
-  --classic-color-primary-dark: #1e3a8a;
-  --classic-color-on-primary: #ffffff;
-
-  --classic-color-secondary: #0891b2;
-  --classic-color-secondary-light: #06b6d4;
-  --classic-color-secondary-dark: #0e7490;
-  --classic-color-on-secondary: #ffffff;
-
-  --classic-color-tertiary: #374151;
-  --classic-color-tertiary-light: #6b7280;
-  --classic-color-tertiary-dark: #1f2937;
-  --classic-color-on-tertiary: #ffffff;
-
-  --classic-color-error: #dc2626;
-  --classic-color-error-light: #ef4444;
-  --classic-color-error-dark: #b91c1c;
-  --classic-color-on-error: #ffffff;
-
-  --classic-color-success: #059669;
-  --classic-color-success-light: #10b981;
-  --classic-color-success-dark: #047857;
-  --classic-color-on-success: #ffffff;
-
-  --classic-color-warning: #d97706;
-  --classic-color-warning-light: #f59e0b;
-  --classic-color-warning-dark: #b45309;
-  --classic-color-on-warning: #ffffff;
-
-  --classic-color-info: #0284c7;
-  --classic-color-info-light: #0ea5e9;
-  --classic-color-info-dark: #0369a1;
-  --classic-color-on-info: #ffffff;
-
+  --classic-color-primary: #ff0080;
+  --classic-color-primary-light: #ff4da6;
+  --classic-color-primary-dark: #cc0066;
+  --classic-color-on-primary: #00ffff;
+  --classic-color-secondary: #00ff80;
+  --classic-color-secondary-light: #4dffa6;
+  --classic-color-secondary-dark: #00cc66;
+  --classic-color-on-secondary: #ff0080;
+  --classic-color-tertiary: #8000ff;
+  --classic-color-tertiary-light: #a64dff;
+  --classic-color-tertiary-dark: #6600cc;
+  --classic-color-on-tertiary: #ffff00;
+  --classic-color-error: #ff0040;
+  --classic-color-error-light: #ff4d73;
+  --classic-color-error-dark: #cc0033;
+  --classic-color-on-error: #00ffff;
+  --classic-color-success: #40ff00;
+  --classic-color-success-light: #73ff4d;
+  --classic-color-success-dark: #33cc00;
+  --classic-color-on-success: #ff0080;
+  --classic-color-warning: #ffff00;
+  --classic-color-warning-light: #ffff4d;
+  --classic-color-warning-dark: #cccc00;
+  --classic-color-on-warning: #8000ff;
+  --classic-color-info: #00ffff;
+  --classic-color-info-light: #4dffff;
+  --classic-color-info-dark: #00cccc;
+  --classic-color-on-info: #ff0080;
+  
   /* === Surface Colors === */
-  --classic-color-surface: red;
-  --classic-color-surface-variant: #f1f5f9;
-  --classic-color-surface-container: #e2e8f0;
-  --classic-color-surface-container-high: #cbd5e1;
-  --classic-color-on-surface: #0f172a;
-  --classic-color-on-surface-variant: #475569;
-
+  --classic-color-surface: #0a0a0a;
+  --classic-color-surface-variant: #1a1a2e;
+  --classic-color-surface-container: #16213e;
+  --classic-color-surface-container-high: #0f3460;
+  --classic-color-on-surface: #ffffff;
+  --classic-color-on-surface-variant: #e94560;
+  
   /* === Background === */
-  --classic-color-background: #ffffff;
-  --classic-color-on-background: #1e293b;
-
+  --classic-color-background: #000000;
+  --classic-color-on-background: #ffffff;
+  
   /* === Outline Colors === */
-  --classic-color-outline: #94a3b8;
-  --classic-color-outline-variant: #cbd5e1;
-  --classic-color-outline-focus: var(--classic-color-primary);
-
+  --classic-color-outline: #ff0080;
+  --classic-color-outline-variant: #00ff80;
+  --classic-color-outline-focus: #8000ff;
+  
   /* === Background Pattern === */
-  --classic-background-image: url('/assets/backgrounds/ocean-waves-pattern.svg');
+  --classic-background-image: 
+    radial-gradient(circle at 25% 25%, #ff008040 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, #00ff8040 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, #8000ff20 0%, transparent 50%),
+    conic-gradient(from 0deg, #ff0080, #00ff80, #8000ff, #ffff00, #00ffff, #ff0080);
   
   /* Section Variables */
-  --classic-section-radius: 1rem;       /* Tailwind: rounded-2xl */
-  --classic-section-padding: 1.25rem;   /* Tailwind: p-5 */
-  --classic-section-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15); /* Ocean blue themed shadow */
+  --classic-section-radius: 2rem;
+  --classic-section-padding: 2rem;
+  --classic-section-shadow: 
+    0 0 30px rgba(255, 0, 128, 0.6),
+    0 0 60px rgba(0, 255, 128, 0.4),
+    0 0 90px rgba(128, 0, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 0, 0.1);
   
   /* Header Section Variables */
-  --classic-header-size: 1.875rem;         /* Tailwind: text-3xl */
-  --classic-header-gap: 0.75rem;
-  --classic-header-margin-bottom: 1.5rem;
-  --classic-header-weight: 500;
+  --classic-header-size: 4rem;
+  --classic-header-gap: 1.5rem;
+  --classic-header-margin-bottom: 3rem;
+  --classic-header-weight: 900;
+}
+
+/* === Funky Animation Keyframes === */
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor,
+      0 0 20px var(--classic-color-primary);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor,
+      0 0 40px var(--classic-color-primary);
+  }
+}
+
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: var(--classic-color-primary);
+    box-shadow: var(--classic-section-shadow);
+  }
+  33% {
+    border-color: var(--classic-color-secondary);
+    box-shadow: 
+      0 0 30px rgba(0, 255, 128, 0.6),
+      0 0 60px rgba(255, 0, 128, 0.4),
+      0 0 90px rgba(128, 0, 255, 0.3);
+  }
+  66% {
+    border-color: var(--classic-color-tertiary);
+    box-shadow: 
+      0 0 30px rgba(128, 0, 255, 0.6),
+      0 0 60px rgba(255, 255, 0, 0.4),
+      0 0 90px rgba(0, 255, 255, 0.3);
+  }
+}
+
+@keyframes backgroundShift {
+  0% { filter: hue-rotate(0deg) saturate(1.5); }
+  25% { filter: hue-rotate(90deg) saturate(2); }
+  50% { filter: hue-rotate(180deg) saturate(1.5); }
+  75% { filter: hue-rotate(270deg) saturate(2); }
+  100% { filter: hue-rotate(360deg) saturate(1.5); }
+}
+
+/* === Base Funky Styles === */
+body {
+  background: var(--classic-color-background);
+  background-image: var(--classic-background-image);
+  color: var(--classic-color-on-background);
+  font-family: 'Courier New', 'Monaco', monospace;
+  animation: backgroundShift 8s ease-in-out infinite;
+  overflow-x: hidden;
+}
+
+/* === Section Styles === */
+.section {
+  background: var(--classic-color-surface);
+  border-radius: var(--classic-section-radius);
+  padding: var(--classic-section-padding);
+  box-shadow: var(--classic-section-shadow);
+  border: 3px solid var(--classic-color-outline);
+  position: relative;
+  animation: borderPulse 3s ease-in-out infinite;
+  backdrop-filter: blur(10px);
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, 
+    var(--classic-color-primary), 
+    var(--classic-color-secondary), 
+    var(--classic-color-tertiary),
+    var(--classic-color-warning),
+    var(--classic-color-info));
+  border-radius: var(--classic-section-radius);
+  z-index: -1;
+  opacity: 0.3;
+  animation: backgroundShift 4s linear infinite reverse;
+}
+
+/* === Header Styles === */
+.header {
+  font-size: var(--classic-header-size);
+  font-weight: var(--classic-header-weight);
+  margin-bottom: var(--classic-header-margin-bottom);
+  color: var(--classic-color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  animation: neonGlow 2s ease-in-out infinite alternate;
+  background: linear-gradient(45deg, 
+    var(--classic-color-primary),
+    var(--classic-color-secondary),
+    var(--classic-color-tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === Interactive Elements === */
+.button {
+  background: linear-gradient(135deg, 
+    var(--classic-color-primary), 
+    var(--classic-color-secondary));
+  color: var(--classic-color-on-primary);
+  border: 2px solid var(--classic-color-outline-focus);
+  border-radius: calc(var(--classic-section-radius) / 2);
+  padding: calc(var(--classic-section-padding) / 2);
+  font-weight: var(--classic-header-weight);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 
+    0 0 20px var(--classic-color-primary),
+    0 0 40px var(--classic-color-secondary),
+    0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: neonGlow 0.5s ease-in-out infinite alternate;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.button:hover::after {
+  animation: shimmer 0.6s ease-out;
+  opacity: 1;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* === Text Elements === */
+.text-primary {
+  color: var(--classic-color-primary);
+  text-shadow: 0 0 10px currentColor;
+}
+
+.text-secondary {
+  color: var(--classic-color-secondary);
+  text-shadow: 0 0 10px currentColor;
+}
+
+.text-tertiary {
+  color: var(--classic-color-tertiary);
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* === Special Effects === */
+.glow-box {
+  background: var(--classic-color-surface-variant);
+  border: 1px solid var(--classic-color-outline-variant);
+  border-radius: var(--classic-section-radius);
+  padding: var(--classic-section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent);
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
