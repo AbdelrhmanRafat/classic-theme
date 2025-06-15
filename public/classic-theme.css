@@ -1,145 +1,131 @@
-/* === Memphis Icon Pattern Theme Design Tokens === */
+/* === Neon Cyber Funk Theme Design Tokens === */
 :root {
   
   /* === Color System === */
-  --classic-color-primary: #ff6b35;
-  --classic-color-primary-light: #ff8c69;
-  --classic-color-primary-dark: #e55100;
-  --classic-color-on-primary: #ffffff;
-  --classic-color-secondary: #f7931e;
-  --classic-color-secondary-light: #ffb74d;
-  --classic-color-secondary-dark: #f57c00;
-  --classic-color-on-secondary: #000000;
-  --classic-color-tertiary: #c2185b;
-  --classic-color-tertiary-light: #f06292;
-  --classic-color-tertiary-dark: #ad1457;
-  --classic-color-on-tertiary: #ffffff;
-  --classic-color-error: #d32f2f;
-  --classic-color-error-light: #f44336;
-  --classic-color-error-dark: #c62828;
-  --classic-color-on-error: #ffffff;
-  --classic-color-success: #388e3c;
-  --classic-color-success-light: #66bb6a;
-  --classic-color-success-dark: #2e7d32;
-  --classic-color-on-success: #ffffff;
-  --classic-color-warning: #fbc02d;
-  --classic-color-warning-light: #ffeb3b;
-  --classic-color-warning-dark: #f9a825;
-  --classic-color-on-warning: #000000;
-  --classic-color-info: #0288d1;
-  --classic-color-info-light: #29b6f6;
-  --classic-color-info-dark: #0277bd;
-  --classic-color-on-info: #ffffff;
+  --classic-color-primary: #ff0080;
+  --classic-color-primary-light: #ff4da6;
+  --classic-color-primary-dark: #cc0066;
+  --classic-color-on-primary: #00ffff;
+  --classic-color-secondary: #00ff80;
+  --classic-color-secondary-light: #4dffa6;
+  --classic-color-secondary-dark: #00cc66;
+  --classic-color-on-secondary: #ff0080;
+  --classic-color-tertiary: #8000ff;
+  --classic-color-tertiary-light: #a64dff;
+  --classic-color-tertiary-dark: #6600cc;
+  --classic-color-on-tertiary: #ffff00;
+  --classic-color-error: #ff0040;
+  --classic-color-error-light: #ff4d73;
+  --classic-color-error-dark: #cc0033;
+  --classic-color-on-error: #00ffff;
+  --classic-color-success: #40ff00;
+  --classic-color-success-light: #73ff4d;
+  --classic-color-success-dark: #33cc00;
+  --classic-color-on-success: #ff0080;
+  --classic-color-warning: #ffff00;
+  --classic-color-warning-light: #ffff4d;
+  --classic-color-warning-dark: #cccc00;
+  --classic-color-on-warning: #8000ff;
+  --classic-color-info: #00ffff;
+  --classic-color-info-light: #4dffff;
+  --classic-color-info-dark: #00cccc;
+  --classic-color-on-info: #ff0080;
   
   /* === Surface Colors === */
-  --classic-color-surface: #fffbf0;
-  --classic-color-surface-variant: #fff3e0;
-  --classic-color-surface-container: #ffeaa7;
-  --classic-color-surface-container-high: #ffcc02;
-  --classic-color-on-surface: #2d3436;
-  --classic-color-on-surface-variant: #636e72;
+  --classic-color-surface: #0a0a0a;
+  --classic-color-surface-variant: #1a1a2e;
+  --classic-color-surface-container: #16213e;
+  --classic-color-surface-container-high: #0f3460;
+  --classic-color-on-surface: #ffffff;
+  --classic-color-on-surface-variant: #e94560;
   
   /* === Background === */
-  --classic-color-background: #fdcb6e;
-  --classic-color-on-background: #2d3436;
+  --classic-color-background: #000000;
+  --classic-color-on-background: #ffffff;
   
   /* === Outline Colors === */
-  --classic-color-outline: #2d3436;
-  --classic-color-outline-variant: #ff6b35;
-  --classic-color-outline-focus: #c2185b;
+  --classic-color-outline: #ff0080;
+  --classic-color-outline-variant: #00ff80;
+  --classic-color-outline-focus: #8000ff;
   
-  /* === Background Pattern with Icons === */
+  /* === Background Pattern === */
   --classic-background-image: 
-    /* Star Icons */
-    radial-gradient(circle at 15% 25%, transparent 8px, var(--classic-color-primary) 9px, var(--classic-color-primary) 11px, transparent 12px),
-    radial-gradient(circle at 85% 75%, transparent 6px, var(--classic-color-secondary) 7px, var(--classic-color-secondary) 9px, transparent 10px),
-    /* Triangle Patterns */
-    conic-gradient(from 0deg at 25% 50%, var(--classic-color-tertiary) 0deg, var(--classic-color-tertiary) 120deg, transparent 120deg, transparent 240deg, var(--classic-color-tertiary) 240deg),
-    conic-gradient(from 60deg at 75% 25%, var(--classic-color-warning) 0deg, var(--classic-color-warning) 120deg, transparent 120deg, transparent 240deg, var(--classic-color-warning) 240deg),
-    /* Zigzag Pattern */
-    repeating-linear-gradient(45deg, transparent 0px, transparent 20px, var(--classic-color-info) 20px, var(--classic-color-info) 25px, transparent 25px, transparent 45px),
-    /* Base gradient */
-    linear-gradient(135deg, var(--classic-color-background) 0%, #fab1a0 100%);
+    radial-gradient(circle at 25% 25%, #ff008040 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, #00ff8040 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, #8000ff20 0%, transparent 50%),
+    conic-gradient(from 0deg, #ff0080, #00ff80, #8000ff, #ffff00, #00ffff, #ff0080);
   
   /* Section Variables */
-  --classic-section-radius: 25px;
-  --classic-section-padding: 2.5rem;
+  --classic-section-radius: 2rem;
+  --classic-section-padding: 2rem;
   --classic-section-shadow: 
-    8px 8px 0px var(--classic-color-outline),
-    16px 16px 0px var(--classic-color-primary),
-    24px 24px 0px var(--classic-color-secondary);
+    0 0 30px rgba(255, 0, 128, 0.6),
+    0 0 60px rgba(0, 255, 128, 0.4),
+    0 0 90px rgba(128, 0, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 0, 0.1);
   
   /* Header Section Variables */
-  --classic-header-size: 3.5rem;
-  --classic-header-gap: 2rem;
-  --classic-header-margin-bottom: 2.5rem;
+  --classic-header-size: 2rem;
+  --classic-header-gap: 1.5rem;
+  --classic-header-margin-bottom: 3rem;
   --classic-header-weight: 900;
 }
 
-/* === Memphis Icon Patterns === */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
+/* === Funky Animation Keyframes === */
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor,
+      0 0 20px var(--classic-color-primary);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor,
+      0 0 40px var(--classic-color-primary);
+  }
 }
 
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: var(--classic-color-primary);
+    box-shadow: var(--classic-section-shadow);
+  }
+  33% {
+    border-color: var(--classic-color-secondary);
+    box-shadow: 
+      0 0 30px rgba(0, 255, 128, 0.6),
+      0 0 60px rgba(255, 0, 128, 0.4),
+      0 0 90px rgba(128, 0, 255, 0.3);
+  }
+  66% {
+    border-color: var(--classic-color-tertiary);
+    box-shadow: 
+      0 0 30px rgba(128, 0, 255, 0.6),
+      0 0 60px rgba(255, 255, 0, 0.4),
+      0 0 90px rgba(0, 255, 255, 0.3);
+  }
 }
 
-@keyframes wiggle {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(3deg); }
-  75% { transform: rotate(-3deg); }
+@keyframes backgroundShift {
+  0% { filter: hue-rotate(0deg) saturate(1.5); }
+  25% { filter: hue-rotate(90deg) saturate(2); }
+  50% { filter: hue-rotate(180deg) saturate(1.5); }
+  75% { filter: hue-rotate(270deg) saturate(2); }
+  100% { filter: hue-rotate(360deg) saturate(1.5); }
 }
 
-/* === Icon Pattern Utilities === */
-.icon-star::before {
-  content: "★";
-  color: var(--classic-color-primary);
-  font-size: 2rem;
-  animation: bounce 2s infinite;
-}
-
-.icon-circle::before {
-  content: "●";
-  color: var(--classic-color-secondary);
-  font-size: 1.5rem;
-  animation: wiggle 1.5s ease-in-out infinite;
-}
-
-.icon-triangle::before {
-  content: "▲";
-  color: var(--classic-color-tertiary);
-  font-size: 1.8rem;
-  animation: rotate 3s linear infinite;
-}
-
-.icon-diamond::before {
-  content: "◆";
-  color: var(--classic-color-warning);
-  font-size: 1.2rem;
-  animation: bounce 1.8s infinite;
-}
-
-.icon-lightning::before {
-  content: "⚡";
-  color: var(--classic-color-info);
-  font-size: 1.6rem;
-  animation: wiggle 1.2s ease-in-out infinite;
-}
-
-/* === Base Memphis Styles === */
+/* === Base Funky Styles === */
 body {
   background: var(--classic-color-background);
   background-image: var(--classic-background-image);
-  background-size: 80px 80px, 120px 120px, 60px 60px, 100px 100px, 40px 40px, 100% 100%;
   color: var(--classic-color-on-background);
-  font-family: 'Arial Black', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-family: 'Courier New', 'Monaco', monospace;
+  animation: backgroundShift 8s ease-in-out infinite;
   overflow-x: hidden;
-  animation: wiggle 4s ease-in-out infinite;
 }
 
 /* === Section Styles === */
@@ -148,46 +134,29 @@ body {
   border-radius: var(--classic-section-radius);
   padding: var(--classic-section-padding);
   box-shadow: var(--classic-section-shadow);
-  border: 5px solid var(--classic-color-outline);
+  border: 3px solid var(--classic-color-outline);
   position: relative;
-  margin: 2rem;
-  transform: rotate(-1deg);
-  transition: all 0.3s ease;
-}
-
-.section:nth-child(even) {
-  transform: rotate(1deg);
-}
-
-.section:hover {
-  transform: rotate(0deg) scale(1.02);
-  animation: bounce 0.6s ease;
+  animation: borderPulse 3s ease-in-out infinite;
+  backdrop-filter: blur(10px);
 }
 
 .section::before {
-  content: "◈ ★ ▲ ● ◆ ⚡";
+  content: '';
   position: absolute;
-  top: -15px;
-  left: 20px;
-  font-size: 1.2rem;
-  color: var(--classic-color-primary);
-  background: var(--classic-color-surface);
-  padding: 0 15px;
-  letter-spacing: 10px;
-  animation: wiggle 2s ease-in-out infinite;
-}
-
-.section::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 30px;
-  height: 30px;
-  background: var(--classic-color-tertiary);
-  border-radius: 50%;
-  border: 3px solid var(--classic-color-outline);
-  animation: bounce 1.5s infinite;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, 
+    var(--classic-color-primary), 
+    var(--classic-color-secondary), 
+    var(--classic-color-tertiary),
+    var(--classic-color-warning),
+    var(--classic-color-info));
+  border-radius: var(--classic-section-radius);
+  z-index: -1;
+  opacity: 0.3;
+  animation: backgroundShift 4s linear infinite reverse;
 }
 
 /* === Header Styles === */
@@ -197,171 +166,111 @@ body {
   margin-bottom: var(--classic-header-margin-bottom);
   color: var(--classic-color-primary);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  position: relative;
-  text-shadow: 
-    3px 3px 0px var(--classic-color-outline),
-    6px 6px 0px var(--classic-color-secondary);
-  transform: skew(-5deg);
-  animation: wiggle 3s ease-in-out infinite;
-}
-
-.header::before {
-  content: "★";
-  position: absolute;
-  left: -60px;
-  top: 0;
-  font-size: 2rem;
-  color: var(--classic-color-warning);
-  animation: rotate 2s linear infinite;
-}
-
-.header::after {
-  content: "▲";
-  position: absolute;
-  right: -60px;
-  top: 0;
-  font-size: 2rem;
-  color: var(--classic-color-info);
-  animation: bounce 1.8s infinite;
+  letter-spacing: 0.2em;
+  animation: neonGlow 2s ease-in-out infinite alternate;
+  background: linear-gradient(45deg, 
+    var(--classic-color-primary),
+    var(--classic-color-secondary),
+    var(--classic-color-tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* === Interactive Elements === */
 .button {
-  background: var(--classic-color-secondary);
-  color: var(--classic-color-on-secondary);
-  border: 4px solid var(--classic-color-outline);
-  border-radius: 0;
-  padding: 1rem 2rem;
-  font-weight: 900;
+  background: linear-gradient(135deg, 
+    var(--classic-color-primary), 
+    var(--classic-color-secondary));
+  color: var(--classic-color-on-primary);
+  border: 2px solid var(--classic-color-outline-focus);
+  border-radius: calc(var(--classic-section-radius) / 2);
+  padding: calc(var(--classic-section-padding) / 2);
+  font-weight: var(--classic-header-weight);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
+  transition: all 0.3s ease;
   position: relative;
-  transform: skew(-10deg) rotate(-2deg);
-  transition: all 0.2s ease;
-  box-shadow: 
-    4px 4px 0px var(--classic-color-outline),
-    8px 8px 0px var(--classic-color-primary);
+  overflow: hidden;
 }
 
 .button:hover {
-  transform: skew(0deg) rotate(0deg) scale(1.1);
-  background: var(--classic-color-primary);
-  color: var(--classic-color-on-primary);
-  animation: wiggle 0.5s ease-in-out;
-}
-
-.button::before {
-  content: "◆";
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: var(--classic-color-tertiary);
-  animation: bounce 1.5s infinite;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 
+    0 0 20px var(--classic-color-primary),
+    0 0 40px var(--classic-color-secondary),
+    0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: neonGlow 0.5s ease-in-out infinite alternate;
 }
 
 .button::after {
-  content: "●";
+  content: '';
   position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: var(--classic-color-warning);
-  animation: rotate 2s linear infinite;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.button:hover::after {
+  animation: shimmer 0.6s ease-out;
+  opacity: 1;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
 
 /* === Text Elements === */
 .text-primary {
   color: var(--classic-color-primary);
-  font-weight: 800;
-  text-shadow: 2px 2px 0px var(--classic-color-outline);
+  text-shadow: 0 0 10px currentColor;
 }
 
 .text-secondary {
   color: var(--classic-color-secondary);
-  font-weight: 800;
-  text-shadow: 2px 2px 0px var(--classic-color-outline);
+  text-shadow: 0 0 10px currentColor;
 }
 
 .text-tertiary {
   color: var(--classic-color-tertiary);
-  font-weight: 800;
-  text-shadow: 2px 2px 0px var(--classic-color-outline);
+  text-shadow: 0 0 10px currentColor;
 }
 
-/* === Special Pattern Boxes === */
-.pattern-box {
+/* === Special Effects === */
+.glow-box {
   background: var(--classic-color-surface-variant);
-  border: 4px dashed var(--classic-color-outline-variant);
+  border: 1px solid var(--classic-color-outline-variant);
   border-radius: var(--classic-section-radius);
   padding: var(--classic-section-padding);
   position: relative;
   overflow: hidden;
 }
 
-.pattern-box::before {
-  content: "★ ▲ ● ◆ ⚡ ◈ ★ ▲ ● ◆ ⚡ ◈";
+.glow-box::before {
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
-  width: 200%;
+  width: 100%;
   height: 100%;
-  color: var(--classic-color-primary);
-  opacity: 0.1;
-  font-size: 3rem;
-  line-height: 1;
-  animation: slide 10s linear infinite;
-  pointer-events: none;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent);
+  animation: slide 3s infinite;
 }
 
 @keyframes slide {
   0% { left: -100%; }
   100% { left: 100%; }
-}
-
-/* === Icon Decorations === */
-.decorated-text {
-  position: relative;
-  display: inline-block;
-}
-
-.decorated-text::before {
-  content: "◆";
-  position: absolute;
-  left: -30px;
-  color: var(--classic-color-warning);
-  font-size: 1.5rem;
-  animation: bounce 2s infinite;
-}
-
-.decorated-text::after {
-  content: "●";
-  position: absolute;
-  right: -30px;
-  color: var(--classic-color-info);
-  font-size: 1.2rem;
-  animation: wiggle 1.8s ease-in-out infinite;
-}
-
-/* === Responsive Icon Patterns === */
-@media (max-width: 768px) {
-  .section::before {
-    content: "★ ▲ ●";
-    font-size: 1rem;
-    letter-spacing: 5px;
-  }
-  
-  .header::before,
-  .header::after {
-    display: none;
-  }
-  
-  .button::before,
-  .button::after {
-    display: none;
-  }
 }
