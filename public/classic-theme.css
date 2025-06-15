@@ -65,7 +65,7 @@
     inset 0 0 20px rgba(255, 255, 0, 0.1);
   
   /* Header Section Variables */
-  --classic-header-size: 4rem;
+  --classic-header-size: 2rem;
   --classic-header-gap: 1.5rem;
   --classic-header-margin-bottom: 3rem;
   --classic-header-weight: 900;
