@@ -1,5 +1,86 @@
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Thin.woff2') format('woff2'),
+       url('PingARLT-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-ExtraLight.woff2') format('woff2'),
+       url('PingARLT-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Light.woff2') format('woff2'),
+       url('PingARLT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Regular.woff2') format('woff2'),
+       url('PingARLT-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Medium.woff2') format('woff2'),
+       url('PingARLT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Bold.woff2') format('woff2'),
+       url('PingARLT-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Heavy.woff2') format('woff2'),
+       url('PingARLT-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Black.woff2') format('woff2'),
+       url('PingARLT-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PingARLT';
+  src: url('PingARLT-Hairline.woff2') format('woff2'),
+       url('PingARLT-Hairline.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: cairo;
+  font-family: 'PingARLT';
 }
 /* === Deep Ocean Blue Theme Design Tokens === */
 :root {
