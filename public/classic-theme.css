@@ -1,70 +1,424 @@
-/* === Deep Ocean Blue Theme Design Tokens === */
+body {
+  font-family: 'PingARLT', sans-serif;
+}
+
+/* === Black Friday Celebration Theme Design Tokens === */
 :root {
   
   /* === Color System === */
-  --classic-color-primary: #1e40af;
-  --classic-color-primary-light: #3b82f6;
-  --classic-color-primary-dark: #1e3a8a;
+  --classic-color-primary: #000000;
+  --classic-color-primary-light: #1a1a1a;
+  --classic-color-primary-dark: #000000;
   --classic-color-on-primary: #ffffff;
-
-  --classic-color-secondary: #0891b2;
-  --classic-color-secondary-light: #06b6d4;
-  --classic-color-secondary-dark: #0e7490;
+  --classic-color-secondary: #ff0000;
+  --classic-color-secondary-light: #ff3333;
+  --classic-color-secondary-dark: #cc0000;
   --classic-color-on-secondary: #ffffff;
-
-  --classic-color-tertiary: #374151;
-  --classic-color-tertiary-light: #6b7280;
-  --classic-color-tertiary-dark: #1f2937;
-  --classic-color-on-tertiary: #ffffff;
-
-  --classic-color-error: #dc2626;
-  --classic-color-error-light: #ef4444;
-  --classic-color-error-dark: #b91c1c;
+  --classic-color-tertiary: #ffd700;
+  --classic-color-tertiary-light: #ffed4e;
+  --classic-color-tertiary-dark: #e6c200;
+  --classic-color-on-tertiary: #000000;
+  --classic-color-error: #ff0000;
+  --classic-color-error-light: #ff3333;
+  --classic-color-error-dark: #cc0000;
   --classic-color-on-error: #ffffff;
-
-  --classic-color-success: #059669;
-  --classic-color-success-light: #10b981;
-  --classic-color-success-dark: #047857;
-  --classic-color-on-success: #ffffff;
-
-  --classic-color-warning: #d97706;
-  --classic-color-warning-light: #f59e0b;
-  --classic-color-warning-dark: #b45309;
-  --classic-color-on-warning: #ffffff;
-
-  --classic-color-info: #0284c7;
-  --classic-color-info-light: #0ea5e9;
-  --classic-color-info-dark: #0369a1;
+  --classic-color-success: #00ff00;
+  --classic-color-success-light: #33ff33;
+  --classic-color-success-dark: #00cc00;
+  --classic-color-on-success: #000000;
+  --classic-color-warning: #ffd700;
+  --classic-color-warning-light: #ffed4e;
+  --classic-color-warning-dark: #e6c200;
+  --classic-color-on-warning: #000000;
+  --classic-color-info: #000000;
+  --classic-color-info-light: #1a1a1a;
+  --classic-color-info-dark: #ffffff;
   --classic-color-on-info: #ffffff;
-
+  
   /* === Surface Colors === */
-  --classic-color-surface: #f8fafc;
-  --classic-color-surface-variant: #f1f5f9;
-  --classic-color-surface-container: #e2e8f0;
-  --classic-color-surface-container-high: #cbd5e1;
-  --classic-color-on-surface: #0f172a;
-  --classic-color-on-surface-variant: #475569;
-
+  --classic-color-surface: #1a1a1a;
+  --classic-color-surface-variant: #2a2a2a;
+  --classic-color-surface-container: #333333;
+  --classic-color-surface-container-high: #404040;
+  --classic-color-on-surface: #ffffff;
+  --classic-color-on-surface-variant: #cccccc;
+  
   /* === Background === */
-  --classic-color-background: #ffffff;
-  --classic-color-on-background: #1e293b;
-
+  --classic-color-background: #000000;
+  --classic-color-on-background: #ffffff;
+  
   /* === Outline Colors === */
-  --classic-color-outline: #94a3b8;
-  --classic-color-outline-variant: #cbd5e1;
-  --classic-color-outline-focus: var(--classic-color-primary);
-
-  /* === Background Pattern === */
-  --classic-background-image: url('/assets/backgrounds/ocean-waves-pattern.svg');
+  --classic-color-outline: #ff0000;
+  --classic-color-outline-variant: #ffd700;
+  --classic-color-outline-focus: var(--classic-color-secondary);
+  
+  /* === Black Friday Background Pattern === */
+  --classic-background-image: 
+    /* Sale tags pattern */
+    radial-gradient(circle at 15% 25%, #ff000020 0%, transparent 30%),
+    radial-gradient(circle at 85% 75%, #ffd70020 0%, transparent 30%),
+    radial-gradient(circle at 45% 15%, #ff000015 0%, transparent 25%),
+    radial-gradient(circle at 25% 85%, #ffd70015 0%, transparent 25%),
+    /* Diagonal stripes */
+    repeating-linear-gradient(45deg, 
+      transparent 0px, 
+      transparent 20px, 
+      rgba(255, 0, 0, 0.05) 20px, 
+      rgba(255, 0, 0, 0.05) 22px, 
+      transparent 22px, 
+      transparent 42px,
+      rgba(255, 215, 0, 0.05) 42px,
+      rgba(255, 215, 0, 0.05) 44px),
+    /* Base black gradient */
+    linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
   
   /* Section Variables */
-  --classic-section-radius: 1rem;       /* Tailwind: rounded-2xl */
-  --classic-section-padding: 1.25rem;   /* Tailwind: p-5 */
-  --classic-section-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15); /* Ocean blue themed shadow */
+  --classic-section-radius: 1rem;
+  --classic-section-padding: 1.25rem;
+  --classic-section-shadow: 
+    0 25px 50px -12px rgba(255, 0, 0, 0.3),
+    0 0 30px rgba(255, 215, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   
   /* Header Section Variables */
-  --classic-header-size: 1.875rem;         /* Tailwind: text-3xl */
+  --classic-header-size: 1.875rem;
   --classic-header-gap: 0.75rem;
   --classic-header-margin-bottom: 1.5rem;
-  --classic-header-weight: 500;
+  --classic-header-weight: 900;
+}
+
+/* === Black Friday Animations === */
+@keyframes saleFlash {
+  0%, 100% {
+    color: var(--classic-color-secondary);
+    text-shadow: 
+      0 0 10px var(--classic-color-secondary),
+      0 0 20px var(--classic-color-secondary),
+      0 0 30px var(--classic-color-secondary);
+  }
+  50% {
+    color: var(--classic-color-tertiary);
+    text-shadow: 
+      0 0 15px var(--classic-color-tertiary),
+      0 0 25px var(--classic-color-tertiary),
+      0 0 35px var(--classic-color-tertiary);
+  }
+}
+
+@keyframes priceTag {
+  0%, 100% {
+    transform: rotate(-3deg) scale(1);
+  }
+  50% {
+    transform: rotate(3deg) scale(1.05);
+  }
+}
+
+@keyframes discountPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(255, 0, 0, 0.5),
+      0 0 40px rgba(255, 215, 0, 0.3),
+      inset 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(255, 0, 0, 0.8),
+      0 0 60px rgba(255, 215, 0, 0.5),
+      inset 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes shoppingBag {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(1deg); }
+  75% { transform: translateY(-3px) rotate(-1deg); }
+}
+
+@keyframes moneyRain {
+  0% { 
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* === Base Black Friday Styles === */
+body {
+  background: var(--classic-color-background);
+  background-image: var(--classic-background-image);
+  background-size: 150px 150px, 100px 100px, 80px 80px, 120px 120px, 60px 60px, 100% 100%;
+  background-attachment: fixed;
+  color: var(--classic-color-on-background);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* === Floating Sale Icons === */
+body::before {
+  content: "🏷️ 💰 🎁 🛍️ 💸 ⚡ 🔥 💳";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  color: var(--classic-color-tertiary);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+  animation: moneyRain 15s linear infinite;
+  letter-spacing: 50px;
+  line-height: 200px;
+}
+
+/* === Section Styles === */
+.section {
+  background: var(--classic-color-surface);
+  background: linear-gradient(135deg, 
+    var(--classic-color-surface) 0%, 
+    var(--classic-color-surface-variant) 100%);
+  border-radius: var(--classic-section-radius);
+  padding: var(--classic-section-padding);
+  box-shadow: var(--classic-section-shadow);
+  border: 2px solid var(--classic-color-outline);
+  position: relative;
+  margin: 1.5rem;
+  animation: discountPulse 3s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "BLACK FRIDAY SALE! 🔥";
+  position: absolute;
+  top: -15px;
+  right: -30px;
+  background: var(--classic-color-secondary);
+  color: var(--classic-color-on-secondary);
+  padding: 5px 40px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  transform: rotate(45deg);
+  letter-spacing: 1px;
+  animation: saleFlash 2s ease-in-out infinite;
+  z-index: 10;
+}
+
+.section::after {
+  content: "💰";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2rem;
+  animation: shoppingBag 2s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+/* === Header Styles === */
+.header {
+  font-size: var(--classic-header-size);
+  font-weight: var(--classic-header-weight);
+  margin-bottom: var(--classic-header-margin-bottom);
+  color: var(--classic-color-on-surface);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: saleFlash 2.5s ease-in-out infinite;
+}
+
+.header::before {
+  content: "🏷️";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  font-size: 1.5rem;
+  animation: priceTag 2s ease-in-out infinite;
+}
+
+.header::after {
+  content: "UP TO 80% OFF!";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-size: 0.7rem;
+  color: var(--classic-color-tertiary);
+  background: var(--classic-color-primary);
+  padding: 5px 10px;
+  border-radius: 15px;
+  animation: saleFlash 1.5s ease-in-out infinite;
+}
+
+/* === Interactive Elements === */
+.button {
+  background: linear-gradient(135deg, 
+    var(--classic-color-secondary) 0%, 
+    var(--classic-color-secondary-dark) 100%);
+  color: var(--classic-color-on-secondary);
+  border: 3px solid var(--classic-color-tertiary);
+  border-radius: var(--classic-section-radius);
+  padding: 1rem 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: discountPulse 2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: linear-gradient(135deg, 
+    var(--classic-color-tertiary) 0%, 
+    var(--classic-color-tertiary-dark) 100%);
+  color: var(--classic-color-on-tertiary);
+  animation: saleFlash 0.5s ease-in-out infinite;
+}
+
+.button::before {
+  content: "🛒 BUY NOW! 🔥";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.button::after {
+  content: "💸";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5rem;
+  animation: shoppingBag 1.5s ease-in-out infinite;
+}
+
+/* === Special Black Friday Elements === */
+.price-tag {
+  background: var(--classic-color-tertiary);
+  color: var(--classic-color-on-tertiary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  animation: priceTag 2s ease-in-out infinite;
+  border: 2px solid var(--classic-color-secondary);
+}
+
+.price-tag::before {
+  content: "SAVE 70%";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--classic-color-secondary);
+  color: var(--classic-color-on-secondary);
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  animation: saleFlash 1s ease-in-out infinite;
+}
+
+.discount-badge {
+  background: var(--classic-color-secondary);
+  color: var(--classic-color-on-secondary);
+  padding: 1rem;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  animation: priceTag 1.5s ease-in-out infinite;
+  border: 3px solid var(--classic-color-tertiary);
+}
+
+/* === Sale Banner === */
+.sale-banner {
+  background: linear-gradient(90deg, 
+    var(--classic-color-secondary) 0%, 
+    var(--classic-color-tertiary) 50%, 
+    var(--classic-color-secondary) 100%);
+  color: var(--classic-color-primary);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  animation: saleFlash 1s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.sale-banner::before {
+  content: "🎉 MEGA BLACK FRIDAY DEALS 🎉";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.sale-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.3), 
+    transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* === Text Elements === */
+.text-primary {
+  color: var(--classic-color-secondary);
+  font-weight: 900;
+  animation: saleFlash 3s ease-in-out infinite;
+}
+
+.text-secondary {
+  color: var(--classic-color-tertiary);
+  font-weight: 700;
+  animation: saleFlash 2s ease-in-out infinite reverse;
+}
+
+.text-tertiary {
+  color: var(--classic-color-on-surface);
+  font-weight: 500;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .section::before {
+    font-size: 0.6rem;
+    padding: 3px 20px;
+  }
+  
+  .header::after {
+    font-size: 0.6rem;
+  }
+  
+  .button::before {
+    content: "BUY NOW!";
+    font-size: 0.8rem;
+  }
 }
