@@ -68,3 +68,7 @@
   --classic-header-margin-bottom: 1.5rem;
   --classic-header-weight: 500;
 }
+
+.classic-form-submit {
+  background-color: red;
+}
