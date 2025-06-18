@@ -1,325 +1,75 @@
-/* === Troy Ancient City Theme Design Tokens === */
+/* === Deep Ocean Blue Theme Design Tokens === */
 :root {
+  
   /* === Color System === */
-  --troy-color-primary: #b45309;
-  --troy-color-primary-light: #d97706;
-  --troy-color-primary-dark: #92400e;
-  --troy-color-on-primary: #ffffff;
+  --classic-color-primary: #1e40af;
+  --classic-color-primary-light: #3b82f6;
+  --classic-color-primary-dark: #1e3a8a;
+  --classic-color-on-primary: #ffffff;
 
-  --troy-color-secondary: #a16207;
-  --troy-color-secondary-light: #ca8a04;
-  --troy-color-secondary-dark: #854d0e;
-  --troy-color-on-secondary: #ffffff;
+  --classic-color-secondary: #0891b2;
+  --classic-color-secondary-light: #06b6d4;
+  --classic-color-secondary-dark: #0e7490;
+  --classic-color-on-secondary: #ffffff;
 
-  --troy-color-tertiary: #78716c;
-  --troy-color-tertiary-light: #a8a29e;
-  --troy-color-tertiary-dark: #57534e;
-  --troy-color-on-tertiary: #ffffff;
+  --classic-color-tertiary: #374151;
+  --classic-color-tertiary-light: #6b7280;
+  --classic-color-tertiary-dark: #1f2937;
+  --classic-color-on-tertiary: #ffffff;
 
-  --troy-color-error: #dc2626;
-  --troy-color-error-light: #ef4444;
-  --troy-color-error-dark: #b91c1c;
-  --troy-color-on-error: #ffffff;
+  --classic-color-error: #dc2626;
+  --classic-color-error-light: #ef4444;
+  --classic-color-error-dark: #b91c1c;
+  --classic-color-on-error: #ffffff;
 
-  --troy-color-success: #16a34a;
-  --troy-color-success-light: #22c55e;
-  --troy-color-success-dark: #15803d;
-  --troy-color-on-success: #ffffff;
+  --classic-color-success: #059669;
+  --classic-color-success-light: #10b981;
+  --classic-color-success-dark: #047857;
+  --classic-color-on-success: #ffffff;
 
-  --troy-color-warning: #eab308;
-  --troy-color-warning-light: #facc15;
-  --troy-color-warning-dark: #ca8a04;
-  --troy-color-on-warning: #1c1917;
+  --classic-color-warning: #d97706;
+  --classic-color-warning-light: #f59e0b;
+  --classic-color-warning-dark: #b45309;
+  --classic-color-on-warning: #ffffff;
 
-  --troy-color-info: #0369a1;
-  --troy-color-info-light: #0284c7;
-  --troy-color-info-dark: #075985;
-  --troy-color-on-info: #ffffff;
+  --classic-color-info: #0284c7;
+  --classic-color-info-light: #0ea5e9;
+  --classic-color-info-dark: #0369a1;
+  --classic-color-on-info: #ffffff;
 
   /* === Surface Colors === */
-  --troy-color-surface: #fef7ed;
-  --troy-color-surface-variant: #fed7aa;
-  --troy-color-surface-container: #fdba74;
-  --troy-color-surface-container-high: #fb923c;
-  --troy-color-on-surface: #431407;
-  --troy-color-on-surface-variant: #9a3412;
+  --classic-color-surface: #f8fafc;
+  --classic-color-surface-variant: #f1f5f9;
+  --classic-color-surface-container: #e2e8f0;
+  --classic-color-surface-container-high: #cbd5e1;
+  --classic-color-on-surface: #0f172a;
+  --classic-color-on-surface-variant: #475569;
 
   /* === Background === */
-  --troy-color-background: #fffbeb;
-  --troy-color-on-background: #451a03;
+  --classic-color-background: #ffffff;
+  --classic-color-on-background: #1e293b;
 
   /* === Outline Colors === */
-  --troy-color-outline: #d97706;
-  --troy-color-outline-variant: #fed7aa;
-  --troy-color-outline-focus: var(--troy-color-primary);
+  --classic-color-outline: #94a3b8;
+  --classic-color-outline-variant: #cbd5e1;
+  --classic-color-outline-focus: var(--classic-color-primary);
 
   /* === Background Pattern === */
-  --troy-background-image: url('/assets/backgrounds/ancient-troy-pattern.svg');
-
+  --classic-background-image: url('/assets/backgrounds/ocean-waves-pattern.svg');
+  
   /* Section Variables */
-  --troy-section-radius: 1.5rem; /* rounded-3xl */
-  --troy-section-padding: 2rem; /* p-8 - more generous for premium feel */
-  --troy-section-shadow: 0 25px 50px -12px rgba(67, 20, 7, 0.25); /* Enhanced shadow */
-
+  --classic-section-radius: 1rem;       /* Tailwind: rounded-2xl */
+  --classic-section-padding: 1.25rem;   /* Tailwind: p-5 */
+  --classic-section-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15); /* Ocean blue themed shadow */
+  
   /* Header Section Variables */
-  --troy-header-size: 2.25rem; /* text-4xl */
-  --troy-header-gap: 1rem; /* gap-4 */
-  --troy-header-margin-bottom: 2rem; /* mb-8 */
-  --troy-header-weight: 700; /* font-bold */
+  --classic-header-size: 1.875rem;         /* Tailwind: text-3xl */
+  --classic-header-gap: 0.75rem;
+  --classic-header-margin-bottom: 1.5rem;
+  --classic-header-weight: 500;
 
   /* Header Section Center variables */
-  --troy-header-center-size: 2.5rem; /* text-5xl */
-  --troy-header-center-weight: 800; /* font-extrabold */
-  --troy-header-center-margin-bottom: 2.5rem; /* mb-10 */
-
-  /* Button Variables */
-  --troy-button-radius: 0.75rem; /* rounded-xl */
-  --troy-button-padding-x: 2rem; /* px-8 */
-  --troy-button-padding-y: 0.875rem; /* py-3.5 */
-  --troy-button-shadow: 0 10px 15px -3px rgba(180, 83, 9, 0.3);
-
-  /* Card Variables */
-  --troy-card-radius: 1.25rem; /* rounded-2xl */
-  --troy-card-padding: 1.5rem; /* p-6 */
-  --troy-card-shadow: 0 20px 25px -5px rgba(67, 20, 7, 0.15);
-
-  /* Grid Variables */
-  --troy-grid-gap: 2rem; /* gap-8 */
-  --troy-grid-gap-sm: 1.5rem; /* gap-6 */
-  --troy-grid-gap-lg: 2.5rem; /* gap-10 */
-}
-
-/* === Troy Theme Reusable Classes === */
-.troy-theme {
-  background-color: var(--troy-color-background);
-  color: var(--troy-color-on-background);
-  font-family: 'Inter', 'system-ui', sans-serif;
-  letter-spacing: 0.025em; /* tracking-wider */
-}
-
-.troy-section {
-  background-color: var(--troy-color-surface);
-  padding: var(--troy-section-padding);
-  border-radius: var(--troy-section-radius);
-  box-shadow: var(--troy-section-shadow);
-  border: 1px solid var(--troy-color-outline-variant);
-  position: relative;
-  overflow: hidden;
-}
-
-.troy-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--troy-color-primary),
-    var(--troy-color-secondary),
-    var(--troy-color-primary)
-  );
-}
-
-.troy-section-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--troy-header-gap);
-  margin-bottom: var(--troy-header-margin-bottom);
-  font-size: var(--troy-header-size);
-  font-weight: var(--troy-header-weight);
-  color: var(--troy-color-on-surface);
-  text-shadow: 0 2px 4px rgba(67, 20, 7, 0.1);
-}
-
-.troy-section-header i {
-  color: var(--troy-color-primary);
-  text-shadow: 0 2px 4px rgba(180, 83, 9, 0.3);
-}
-
-.troy-middle-title {
-  text-align: center;
-  font-size: var(--troy-header-center-size);
-  font-weight: var(--troy-header-center-weight);
-  color: var(--troy-color-on-surface);
-  margin-bottom: var(--troy-header-center-margin-bottom);
-  text-shadow: 0 4px 8px rgba(67, 20, 7, 0.15);
-  position: relative;
-}
-
-.troy-middle-title::after {
-  content: '';
-  position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4rem;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--troy-color-primary),
-    transparent
-  );
-  border-radius: 2px;
-}
-
-/* === Troy Button Styles === */
-.troy-btn-primary {
-  background: linear-gradient(135deg, var(--troy-color-primary), var(--troy-color-primary-light));
-  color: var(--troy-color-on-primary);
-  padding: var(--troy-button-padding-y) var(--troy-button-padding-x);
-  border-radius: var(--troy-button-radius);
-  box-shadow: var(--troy-button-shadow);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.troy-btn-primary:hover {
-  background: linear-gradient(135deg, var(--troy-color-primary-dark), var(--troy-color-primary));
-  transform: translateY(-2px);
-  box-shadow: 0 15px 25px -5px rgba(180, 83, 9, 0.4);
-}
-
-.troy-btn-secondary {
-  background: linear-gradient(135deg, var(--troy-color-secondary), var(--troy-color-secondary-light));
-  color: var(--troy-color-on-secondary);
-  padding: var(--troy-button-padding-y) var(--troy-button-padding-x);
-  border-radius: var(--troy-button-radius);
-  box-shadow: var(--troy-button-shadow);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.troy-btn-outline {
-  background: transparent;
-  color: var(--troy-color-primary);
-  border: 2px solid var(--troy-color-primary);
-  padding: calc(var(--troy-button-padding-y) - 2px) calc(var(--troy-button-padding-x) - 2px);
-  border-radius: var(--troy-button-radius);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.troy-btn-outline:hover {
-  background: var(--troy-color-primary);
-  color: var(--troy-color-on-primary);
-  transform: translateY(-1px);
-}
-
-/* === Troy Card Styles === */
-.troy-card {
-  background: var(--troy-color-surface);
-  border-radius: var(--troy-card-radius);
-  padding: var(--troy-card-padding);
-  box-shadow: var(--troy-card-shadow);
-  border: 1px solid var(--troy-color-outline-variant);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.troy-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 25px 35px -5px rgba(67, 20, 7, 0.2);
-}
-
-.troy-card-premium {
-  background: linear-gradient(135deg, var(--troy-color-surface), var(--troy-color-surface-variant));
-  border: 2px solid var(--troy-color-primary-light);
-}
-
-.troy-card-premium::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--troy-color-primary), var(--troy-color-secondary));
-}
-
-/* === Troy Grid System === */
-.troy-grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--troy-grid-gap);
-}
-
-.troy-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--troy-grid-gap);
-}
-
-.troy-grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--troy-grid-gap);
-}
-
-/* Responsive Troy Grids */
-@media (max-width: 768px) {
-  .troy-grid-2,
-  .troy-grid-3,
-  .troy-grid-4 {
-    grid-template-columns: 1fr;
-    gap: var(--troy-grid-gap-sm);
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .troy-grid-3,
-  .troy-grid-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* === Troy Text Styles === */
-.troy-text-accent {
-  color: var(--troy-color-primary);
-  font-weight: 600;
-}
-
-.troy-text-muted {
-  color: var(--troy-color-on-surface-variant);
-}
-
-.troy-text-gradient {
-  background: linear-gradient(135deg, var(--troy-color-primary), var(--troy-color-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-}
-
-/* === Troy Badge Styles === */
-.troy-badge {
-  background: linear-gradient(135deg, var(--troy-color-primary), var(--troy-color-primary-light));
-  color: var(--troy-color-on-primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-.troy-badge-outline {
-  background: transparent;
-  color: var(--troy-color-primary);
-  border: 1px solid var(--troy-color-primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
+  --classic-header-center-size : 1.875rem; 
+  --classic-header-center-wight : 700; 
+  --classic-header-center-margin-bottom : 1.75rem; 
 }
