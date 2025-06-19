@@ -1,75 +1,75 @@
-/* === NASA Space Exploration Theme Design Tokens === */
+/* === NASA Mission Control Orange Theme Design Tokens === */
 :root {
   
   /* === Color System === */
-  --nasa-color-primary: #0b3d91;
-  --nasa-color-primary-light: #1e40af;
-  --nasa-color-primary-dark: #0c2d6b;
+  --nasa-color-primary: #ff6600;
+  --nasa-color-primary-light: #ff8533;
+  --nasa-color-primary-dark: #cc5200;
   --nasa-color-on-primary: #ffffff;
 
-  --nasa-color-secondary: #fc3d21;
-  --nasa-color-secondary-light: #ff4d32;
-  --nasa-color-secondary-dark: #dc2626;
+  --nasa-color-secondary: #0066cc;
+  --nasa-color-secondary-light: #3385d6;
+  --nasa-color-secondary-dark: #0052a3;
   --nasa-color-on-secondary: #ffffff;
 
-  --nasa-color-tertiary: #1e1e1e;
-  --nasa-color-tertiary-light: #404040;
-  --nasa-color-tertiary-dark: #0a0a0a;
+  --nasa-color-tertiary: #4a5568;
+  --nasa-color-tertiary-light: #718096;
+  --nasa-color-tertiary-dark: #2d3748;
   --nasa-color-on-tertiary: #ffffff;
 
-  --nasa-color-error: #ff0000;
-  --nasa-color-error-light: #ff3333;
-  --nasa-color-error-dark: #cc0000;
+  --nasa-color-error: #e53e3e;
+  --nasa-color-error-light: #fc8181;
+  --nasa-color-error-dark: #c53030;
   --nasa-color-on-error: #ffffff;
 
-  --nasa-color-success: #00ff00;
-  --nasa-color-success-light: #33ff33;
-  --nasa-color-success-dark: #00cc00;
-  --nasa-color-on-success: #000000;
+  --nasa-color-success: #38a169;
+  --nasa-color-success-light: #68d391;
+  --nasa-color-success-dark: #2f855a;
+  --nasa-color-on-success: #ffffff;
 
-  --nasa-color-warning: #ffaa00;
-  --nasa-color-warning-light: #ffbb33;
-  --nasa-color-warning-dark: #cc8800;
-  --nasa-color-on-warning: #000000;
+  --nasa-color-warning: #dd6b20;
+  --nasa-color-warning-light: #ed8936;
+  --nasa-color-warning-dark: #c05621;
+  --nasa-color-on-warning: #ffffff;
 
-  --nasa-color-info: #00aaff;
-  --nasa-color-info-light: #33bbff;
-  --nasa-color-info-dark: #0088cc;
+  --nasa-color-info: #319795;
+  --nasa-color-info-light: #4fd1c7;
+  --nasa-color-info-dark: #2c7a7b;
   --nasa-color-on-info: #ffffff;
 
   /* === Surface Colors === */
-  --nasa-color-surface: #f0f4f8;
-  --nasa-color-surface-variant: #e1e8ed;
-  --nasa-color-surface-container: #d1dae0;
-  --nasa-color-surface-container-high: #b8c5ce;
-  --nasa-color-on-surface: #0f1419;
-  --nasa-color-on-surface-variant: #2d3748;
+  --nasa-color-surface: #faf5f0;
+  --nasa-color-surface-variant: #f7e6d3;
+  --nasa-color-surface-container: #f4d7b6;
+  --nasa-color-surface-container-high: #efc999;
+  --nasa-color-on-surface: #1a1611;
+  --nasa-color-on-surface-variant: #744210;
 
   /* === Background === */
-  --nasa-color-background: #ffffff;
-  --nasa-color-on-background: #1a202c;
+  --nasa-color-background: #fffaf7;
+  --nasa-color-on-background: #2d1b0e;
 
   /* === Outline Colors === */
-  --nasa-color-outline: #718096;
-  --nasa-color-outline-variant: #cbd5e0;
+  --nasa-color-outline: #a0651e;
+  --nasa-color-outline-variant: #e6c2a6;
   --nasa-color-outline-focus: var(--nasa-color-primary);
 
   /* === Background Pattern === */
-  --nasa-background-image: url('/assets/backgrounds/stars-constellation-pattern.svg');
+  --nasa-background-image: url('/assets/backgrounds/rocket-launch-pattern.svg');
   
   /* Section Variables */
-  --nasa-section-radius: 0.5rem;        /* Tailwind: rounded-lg - Sharp, technical look */
-  --nasa-section-padding: 1.5rem;       /* Tailwind: p-6 - Spacious like mission control */
-  --nasa-section-shadow: 0 20px 40px -8px rgba(11, 61, 145, 0.2); /* Deep space blue shadow */
+  --nasa-section-radius: 0.75rem;       /* Tailwind: rounded-xl - Balanced technical look */
+  --nasa-section-padding: 1.75rem;      /* Tailwind: p-7 - Mission control spacing */
+  --nasa-section-shadow: 0 25px 50px -12px rgba(255, 102, 0, 0.15); /* Warm orange glow shadow */
   
   /* Header Section Variables */
-  --nasa-header-size: 2rem;             /* Tailwind: text-4xl - Bold like mission titles */
-  --nasa-header-gap: 1rem;              /* Generous spacing for readability */
-  --nasa-header-margin-bottom: 2rem;    /* Clear separation like technical docs */
-  --nasa-header-weight: 700;            /* Bold for authority and clarity */
+  --nasa-header-size: 2.25rem;          /* Tailwind: text-4xl - Command authority */
+  --nasa-header-gap: 1.125rem;          /* Precise spacing for technical clarity */
+  --nasa-header-margin-bottom: 2.25rem; /* Clear mission briefing separation */
+  --nasa-header-weight: 700;            /* Bold mission directives */
 
   /* Header Section Center variables */
-  --nasa-header-center-size: 2.5rem;    /* Tailwind: text-5xl - Mission-critical prominence */
-  --nasa-header-center-weight: 800;     /* Extra bold for mission headers */
-  --nasa-header-center-margin-bottom: 2.5rem; /* Dramatic spacing for impact */
+  --nasa-header-center-size: 2.75rem;   /* Tailwind: text-5xl - Mission commander prominence */
+  --nasa-header-center-weight: 800;     /* Extra bold for critical missions */
+  --nasa-header-center-margin-bottom: 3rem; /* Dramatic launch countdown spacing */
 }
