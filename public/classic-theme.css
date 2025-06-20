@@ -1,75 +1,516 @@
-/* === Deep Ocean Blue Theme Design Tokens === */
+/* Import elegant Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', 'PingARLT', sans-serif;
+}
+
+/* === Elegant Ladies Theme Design Tokens === */
 :root {
   
   /* === Color System === */
-  --classic-color-primary: #1e40af;
-  --classic-color-primary-light: #3b82f6;
-  --classic-color-primary-dark: #1e3a8a;
+  --classic-color-primary: #d946ef;
+  --classic-color-primary-light: #e879f9;
+  --classic-color-primary-dark: #c026d3;
   --classic-color-on-primary: #ffffff;
-
-  --classic-color-secondary: #0891b2;
-  --classic-color-secondary-light: #06b6d4;
-  --classic-color-secondary-dark: #0e7490;
+  --classic-color-secondary: #f472b6;
+  --classic-color-secondary-light: #f9a8d4;
+  --classic-color-secondary-dark: #ec4899;
   --classic-color-on-secondary: #ffffff;
-
-  --classic-color-tertiary: #374151;
-  --classic-color-tertiary-light: #6b7280;
-  --classic-color-tertiary-dark: #1f2937;
-  --classic-color-on-tertiary: #ffffff;
-
-  --classic-color-error: #dc2626;
-  --classic-color-error-light: #ef4444;
-  --classic-color-error-dark: #b91c1c;
+  --classic-color-tertiary: #fbbf24;
+  --classic-color-tertiary-light: #fde047;
+  --classic-color-tertiary-dark: #f59e0b;
+  --classic-color-on-tertiary: #000000;
+  --classic-color-error: #f87171;
+  --classic-color-error-light: #fca5a5;
+  --classic-color-error-dark: #ef4444;
   --classic-color-on-error: #ffffff;
-
-  --classic-color-success: #059669;
-  --classic-color-success-light: #10b981;
-  --classic-color-success-dark: #047857;
-  --classic-color-on-success: #ffffff;
-
-  --classic-color-warning: #d97706;
-  --classic-color-warning-light: #f59e0b;
-  --classic-color-warning-dark: #b45309;
-  --classic-color-on-warning: #ffffff;
-
-  --classic-color-info: #0284c7;
-  --classic-color-info-light: #0ea5e9;
-  --classic-color-info-dark: #0369a1;
+  --classic-color-success: #34d399;
+  --classic-color-success-light: #6ee7b7;
+  --classic-color-success-dark: #10b981;
+  --classic-color-on-success: #000000;
+  --classic-color-warning: #fbbf24;
+  --classic-color-warning-light: #fde047;
+  --classic-color-warning-dark: #f59e0b;
+  --classic-color-on-warning: #000000;
+  --classic-color-info: #d946ef;
+  --classic-color-info-light: #e879f9;
+  --classic-color-info-dark: #c026d3;
   --classic-color-on-info: #ffffff;
-
+  
   /* === Surface Colors === */
-  --classic-color-surface: #f8fafc;
-  --classic-color-surface-variant: #f1f5f9;
-  --classic-color-surface-container: #e2e8f0;
-  --classic-color-surface-container-high: #cbd5e1;
-  --classic-color-on-surface: #0f172a;
-  --classic-color-on-surface-variant: #475569;
-
+  --classic-color-surface: #ffffff;
+  --classic-color-surface-variant: #fdf2f8;
+  --classic-color-surface-container: #fce7f3;
+  --classic-color-surface-container-high: #f3e8ff;
+  --classic-color-on-surface: #1f2937;
+  --classic-color-on-surface-variant: #6b7280;
+  
   /* === Background === */
-  --classic-color-background: #ffffff;
-  --classic-color-on-background: #1e293b;
-
+  --classic-color-background: #fefcff;
+  --classic-color-on-background: #1f2937;
+  
   /* === Outline Colors === */
-  --classic-color-outline: #94a3b8;
-  --classic-color-outline-variant: #cbd5e1;
+  --classic-color-outline: #e5e7eb;
+  --classic-color-outline-variant: #f3f4f6;
   --classic-color-outline-focus: var(--classic-color-primary);
-
-  /* === Background Pattern === */
-  --classic-background-image: url('/assets/backgrounds/ocean-waves-pattern.svg');
+  
+  /* === Elegant Feminine Background Pattern === */
+  --classic-background-image: 
+    /* Delicate florals */
+    radial-gradient(circle at 20% 30%, rgba(244, 114, 182, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(217, 70, 239, 0.025) 0%, transparent 35%),
+    radial-gradient(circle at 40% 80%, rgba(251, 191, 36, 0.02) 0%, transparent 30%),
+    /* Soft dots pattern */
+    radial-gradient(circle at 60% 20%, rgba(244, 114, 182, 0.02) 0%, transparent 25%),
+    radial-gradient(circle at 10% 60%, rgba(217, 70, 239, 0.015) 0%, transparent 20%),
+    /* Subtle diagonal lines */
+    repeating-linear-gradient(135deg, 
+      transparent 0px, 
+      transparent 40px, 
+      rgba(244, 114, 182, 0.008) 40px, 
+      rgba(244, 114, 182, 0.008) 42px),
+    /* Base gradient */
+    linear-gradient(135deg, #fefcff 0%, #fdf2f8 50%, #f3e8ff 100%);
   
   /* Section Variables */
-  --classic-section-radius: 1rem;       /* Tailwind: rounded-2xl */
-  --classic-section-padding: 1.25rem;   /* Tailwind: p-5 */
-  --classic-section-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15); /* Ocean blue themed shadow */
+  --classic-section-radius: 1.5rem;
+  --classic-section-padding: 2rem;
+  --classic-section-shadow: 
+    0 4px 6px -1px rgba(244, 114, 182, 0.08),
+    0 2px 4px -2px rgba(217, 70, 239, 0.05),
+    0 0 0 1px rgba(244, 114, 182, 0.02);
   
   /* Header Section Variables */
-  --classic-header-size: 1.875rem;         /* Tailwind: text-3xl */
-  --classic-header-gap: 0.75rem;
+  --classic-header-size: 2.5rem;
+  --classic-header-gap: 1rem;
   --classic-header-margin-bottom: 1.5rem;
   --classic-header-weight: 500;
+}
 
-  /* Header Section Center variables */
-  --classic-header-center-size : 1.875rem; 
-  --classic-header-center-wight : 700; 
-  --classic-header-center-margin-bottom : 1.75rem; 
+/* === Elegant Animations === */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    box-shadow: 
+      0 4px 6px -1px rgba(244, 114, 182, 0.08),
+      0 2px 4px -2px rgba(217, 70, 239, 0.05),
+      0 0 0 1px rgba(244, 114, 182, 0.02);
+  }
+  50% {
+    box-shadow: 
+      0 10px 15px -3px rgba(244, 114, 182, 0.15),
+      0 4px 6px -4px rgba(217, 70, 239, 0.1),
+      0 0 0 1px rgba(244, 114, 182, 0.05);
+  }
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* === Base Elegant Styles === */
+body {
+  background: var(--classic-color-background);
+  background-image: var(--classic-background-image);
+  background-size: 200px 200px, 150px 150px, 180px 180px, 120px 120px, 100px 100px, 80px 80px, 100% 100%;
+  background-attachment: fixed;
+  color: var(--classic-color-on-background);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* === Floating Petals === */
+body::before {
+  content: "🌸 🌺 💐 🌷 🏵️ 🌹 ✨ 💖";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: var(--classic-color-primary);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+  animation: petalFall 20s linear infinite;
+  letter-spacing: 100px;
+  line-height: 150px;
+}
+
+/* === Section Styles === */
+.section {
+  background: var(--classic-color-surface);
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.9) 0%, 
+    rgba(253, 242, 248, 0.8) 100%);
+  border-radius: var(--classic-section-radius);
+  padding: var(--classic-section-padding);
+  box-shadow: var(--classic-section-shadow);
+  border: 1px solid var(--classic-color-outline);
+  position: relative;
+  margin: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  animation: softGlow 2s ease-in-out infinite;
+  border-color: var(--classic-color-primary);
+}
+
+.section::before {
+  content: "✨";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: var(--classic-color-primary);
+  animation: gentleFloat 3s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--classic-color-primary) 0%, 
+    var(--classic-color-secondary) 50%, 
+    var(--classic-color-tertiary) 100%);
+  border-radius: var(--classic-section-radius) var(--classic-section-radius) 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section:hover::after {
+  opacity: 1;
+}
+
+/* === Header Styles === */
+.header {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--classic-header-size);
+  font-weight: var(--classic-header-weight);
+  margin-bottom: var(--classic-header-margin-bottom);
+  color: var(--classic-color-on-surface);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  position: relative;
+  background: linear-gradient(135deg, 
+    var(--classic-color-primary) 0%, 
+    var(--classic-color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header::before {
+  content: "🌸";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  font-size: 1.5rem;
+  color: var(--classic-color-secondary);
+  animation: gentleFloat 2.5s ease-in-out infinite;
+  -webkit-text-fill-color: var(--classic-color-secondary);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--classic-color-primary) 0%, 
+    var(--classic-color-secondary) 100%);
+  border-radius: 1px;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section:hover .header::after {
+  width: 120px;
+}
+
+/* === Interactive Elements === */
+.button {
+  background: linear-gradient(135deg, 
+    var(--classic-color-primary) 0%, 
+    var(--classic-color-secondary) 100%);
+  color: var(--classic-color-on-primary);
+  border: none;
+  border-radius: 50px;
+  padding: 0.875rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 
+    0 4px 6px -1px rgba(244, 114, 182, 0.25),
+    0 2px 4px -2px rgba(217, 70, 239, 0.15);
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 10px 15px -3px rgba(244, 114, 182, 0.35),
+    0 4px 6px -4px rgba(217, 70, 239, 0.25);
+  background: linear-gradient(135deg, 
+    var(--classic-color-secondary) 0%, 
+    var(--classic-color-primary) 100%);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent);
+  transition: left 0.5s;
+}
+
+.button:hover::before {
+  animation: shimmer 0.6s ease-out;
+}
+
+.button::after {
+  content: "💖";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover::after {
+  opacity: 1;
+}
+
+/* === Elegant Card Styles === */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid var(--classic-color-outline);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--classic-color-primary);
+  box-shadow: 
+    0 10px 25px -5px rgba(244, 114, 182, 0.15),
+    0 8px 10px -6px rgba(217, 70, 239, 0.1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(244, 114, 182, 0.05), 
+    transparent);
+  transition: left 0.8s;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* === Input Styles === */
+.input {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--classic-color-outline);
+  border-radius: 12px;
+  padding: 0.875rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: var(--classic-color-on-surface);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  outline: none;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.input:focus {
+  border-color: var(--classic-color-primary);
+  box-shadow: 
+    0 0 0 3px rgba(244, 114, 182, 0.1),
+    0 4px 6px -1px rgba(244, 114, 182, 0.1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.input::placeholder {
+  color: var(--classic-color-on-surface-variant);
+  font-style: italic;
+}
+
+/* === Text Elements === */
+.text-primary {
+  color: var(--classic-color-primary);
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-secondary {
+  color: var(--classic-color-secondary);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-tertiary {
+  color: var(--classic-color-on-surface-variant);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === Elegant Badge === */
+.badge {
+  background: linear-gradient(135deg, 
+    var(--classic-color-primary) 0%, 
+    var(--classic-color-secondary) 100%);
+  color: var(--classic-color-on-primary);
+  padding: 0.375rem 0.875rem;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge::before {
+  content: "✨";
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* === Elegant Quote Style === */
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--classic-color-on-surface);
+  border-left: 3px solid var(--classic-color-primary);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.quote::before {
+  content: """;
+  font-size: 3rem;
+  color: var(--classic-color-primary);
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .header {
+    font-size: 2rem;
+  }
+  
+  .header::before {
+    left: -35px;
+    font-size: 1.2rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* === Special Ladies Elements === */
+.flower-divider {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.flower-divider::before {
+  content: "🌸 ✨ 🌸 ✨ 🌸";
+  color: var(--classic-color-primary);
+  font-size: 1.2rem;
+  background: var(--classic-color-background);
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.flower-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--classic-color-primary) 50%, 
+    transparent 100%);
+  z-index: 1;
 }
