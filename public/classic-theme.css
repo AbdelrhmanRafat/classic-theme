@@ -1,9 +1,5 @@
-/* === Multi-Theme Design Tokens Root File === */
+/* === Deep Ocean Blue Theme Design Tokens === */
 :root {
-  
-  /* ========================================== */
-  /* === CLASSIC - Deep Ocean Blue Theme === */
-  /* ========================================== */
   
   /* === Color System === */
   --classic-color-primary: #1e40af;
@@ -73,159 +69,81 @@
   --classic-header-weight: 500;
 
   /* Header Section Center variables */
-  --classic-header-center-size: 1.875rem; 
-  --classic-header-center-weight: 700; 
-  --classic-header-center-margin-bottom: 1.75rem; 
+  --classic-header-center-size : 1.875rem; 
+  --classic-header-center-wight : 700; 
+  --classic-header-center-margin-bottom : 1.75rem; 
 
-  /* ======================================== */
-  /* === NASA - Space Exploration Theme === */
-  /* ======================================== */
+  /* NASA Theme  */
+    /* === Color System === */
+    --nasa-color-primary: #0b3d91; /* Deep space blue */
+    --nasa-color-primary-light: #1e56d2;
+    --nasa-color-primary-dark: #072e70;
+    --nasa-color-on-primary: #ffffff;
   
-  /* === Color System === */
-  --nasa-color-primary: #0b3d91;
-  --nasa-color-primary-light: #1e40af;
-  --nasa-color-primary-dark: #0c2d6b;
-  --nasa-color-on-primary: #ffffff;
-
-  --nasa-color-secondary: #fc3d21;
-  --nasa-color-secondary-light: #ff4d32;
-  --nasa-color-secondary-dark: #dc2626;
-  --nasa-color-on-secondary: #ffffff;
-
-  --nasa-color-tertiary: #1e1e1e;
-  --nasa-color-tertiary-light: #404040;
-  --nasa-color-tertiary-dark: #0a0a0a;
-  --nasa-color-on-tertiary: #ffffff;
-
-  --nasa-color-error: #ff0000;
-  --nasa-color-error-light: #ff3333;
-  --nasa-color-error-dark: #cc0000;
-  --nasa-color-on-error: #ffffff;
-
-  --nasa-color-success: #00ff00;
-  --nasa-color-success-light: #33ff33;
-  --nasa-color-success-dark: #00cc00;
-  --nasa-color-on-success: #000000;
-
-  --nasa-color-warning: #ffaa00;
-  --nasa-color-warning-light: #ffbb33;
-  --nasa-color-warning-dark: #cc8800;
-  --nasa-color-on-warning: #000000;
-
-  --nasa-color-info: #00aaff;
-  --nasa-color-info-light: #33bbff;
-  --nasa-color-info-dark: #0088cc;
-  --nasa-color-on-info: #ffffff;
-
-  /* === Surface Colors === */
-  --nasa-color-surface: #e1e8ed;
-  --nasa-color-surface-variant: #e1e8ed;
-  --nasa-color-surface-container: #d1dae0;
-  --nasa-color-surface-container-high: #b8c5ce;
-  --nasa-color-on-surface: #0f1419;
-  --nasa-color-on-surface-variant: #2d3748;
-
-  /* === Background === */
-  --nasa-color-background: #ffffff;
-  --nasa-color-on-background: #1a202c;
-
-  /* === Outline Colors === */
-  --nasa-color-outline: #718096;
-  --nasa-color-outline-variant: #cbd5e0;
-  --nasa-color-outline-focus: var(--nasa-color-primary);
-
-  /* === Background Pattern === */
-  --nasa-background-image: url('/assets/backgrounds/stars-constellation-pattern.svg');
+    --nasa-color-secondary: #6c757d; /* Moon gray */
+    --nasa-color-secondary-light: #adb5bd;
+    --nasa-color-secondary-dark: #495057;
+    --nasa-color-on-secondary: #ffffff;
   
-  /* Section Variables */
-  --nasa-section-radius: 0.5rem;        /* Tailwind: rounded-lg - Sharp, technical look */
-  --nasa-section-padding: 1.5rem;       /* Tailwind: p-6 - Spacious like mission control */
-  --nasa-section-shadow: 0 20px 40px -8px rgba(11, 61, 145, 0.2); /* Deep space blue shadow */
+    --nasa-color-tertiary: #5f27cd; /* Galactic purple */
+    --nasa-color-tertiary-light: #a29bfe;
+    --nasa-color-tertiary-dark: #341f97;
+    --nasa-color-on-tertiary: #ffffff;
   
-  /* Header Section Variables */
-  --nasa-header-size: 2rem;             /* Tailwind: text-4xl - Bold like mission titles */
-  --nasa-header-gap: 1rem;              /* Generous spacing for readability */
-  --nasa-header-margin-bottom: 2rem;    /* Clear separation like technical docs */
-  --nasa-header-weight: 700;            /* Bold for authority and clarity */
-
-  /* Header Section Center variables */
-  --nasa-header-center-size: 2.5rem;    /* Tailwind: text-5xl - Mission-critical prominence */
-  --nasa-header-center-weight: 800;     /* Extra bold for mission headers */
-  --nasa-header-center-margin-bottom: 2.5rem; /* Dramatic spacing for impact */
-
-  /* ===================================== */
-  /* === TROY - Ancient City Theme === */
-  /* ===================================== */
+    --nasa-color-error: #ff4d4f;
+    --nasa-color-error-light: #ff7f7f;
+    --nasa-color-error-dark: #d32f2f;
+    --nasa-color-on-error: #ffffff;
   
-  /* === Color System === */
-  --troy-color-primary: #b45309;
-  --troy-color-primary-light: #d97706;
-  --troy-color-primary-dark: #92400e;
-  --troy-color-on-primary: #ffffff;
-
-  --troy-color-secondary: #a16207;
-  --troy-color-secondary-light: #ca8a04;
-  --troy-color-secondary-dark: #854d0e;
-  --troy-color-on-secondary: #ffffff;
-
-  --troy-color-tertiary: #78716c;
-  --troy-color-tertiary-light: #a8a29e;
-  --troy-color-tertiary-dark: #57534e;
-  --troy-color-on-tertiary: #ffffff;
-
-  --troy-color-error: #dc2626;
-  --troy-color-error-light: #ef4444;
-  --troy-color-error-dark: #b91c1c;
-  --troy-color-on-error: #ffffff;
-
-  --troy-color-success: #16a34a;
-  --troy-color-success-light: #22c55e;
-  --troy-color-success-dark: #15803d;
-  --troy-color-on-success: #ffffff;
-
-  --troy-color-warning: #eab308;
-  --troy-color-warning-light: #facc15;
-  --troy-color-warning-dark: #ca8a04;
-  --troy-color-on-warning: #1c1917;
-
-  --troy-color-info: #0369a1;
-  --troy-color-info-light: #0284c7;
-  --troy-color-info-dark: #075985;
-  --troy-color-on-info: #ffffff;
-
-  /* === Surface Colors === */
-  --troy-color-surface: #fef7ed;
-  --troy-color-surface-variant: #fed7aa;
-  --troy-color-surface-container: #fdba74;
-  --troy-color-surface-container-high: #fb923c;
-  --troy-color-on-surface: #431407;
-  --troy-color-on-surface-variant: #9a3412;
-
-  /* === Background === */
-  --troy-color-background: #fffbeb;
-  --troy-color-on-background: #451a03;
-
-  /* === Outline Colors === */
-  --troy-color-outline: #d97706;
-  --troy-color-outline-variant: #fed7aa;
-  --troy-color-outline-focus: var(--troy-color-primary);
-
-  /* === Background Pattern === */
-  --troy-background-image: url('/assets/backgrounds/ancient-troy-pattern.svg');
+    --nasa-color-success: #00c851;
+    --nasa-color-success-light: #33d97d;
+    --nasa-color-success-dark: #007e33;
+    --nasa-color-on-success: #ffffff;
   
-  /* Section Variables */
-  --troy-section-radius: 1.25rem;       /* Tailwind: rounded-3xl - slightly more rounded for ancient aesthetic */
-  --troy-section-padding: 1.5rem;       /* Tailwind: p-6 - more generous padding */
-  --troy-section-shadow: 0 25px 50px -12px rgba(67, 20, 7, 0.2); /* Warm bronze themed shadow */
+    --nasa-color-warning: #ff8800;
+    --nasa-color-warning-light: #ffbb33;
+    --nasa-color-warning-dark: #cc7000;
+    --nasa-color-on-warning: #ffffff;
   
-  /* Header Section Variables */
-  --troy-header-size: 2rem;              /* Tailwind: text-4xl - larger for ancient grandeur */
-  --troy-header-gap: 0.875rem;
-  --troy-header-margin-bottom: 1.75rem;
-  --troy-header-weight: 600;             /* Bolder for ancient authority */
-
-  /* Header Section Center variables */
-  --troy-header-center-size: 2.25rem;    /* Tailwind: text-4xl - even larger for center headers */
-  --troy-header-center-weight: 800;      /* Very bold for central importance */
-  --troy-header-center-margin-bottom: 2rem; /* More space for dramatic effect */
+    --nasa-color-info: #33b5e5;
+    --nasa-color-info-light: #81d4fa;
+    --nasa-color-info-dark: #0099cc;
+    --nasa-color-on-info: #ffffff;
+  
+    /* === Surface Colors === */
+    --nasa-color-surface: #0d1117;
+    --nasa-color-surface-variant: #161b22;
+    --nasa-color-surface-container: #21262d;
+    --nasa-color-surface-container-high: #30363d;
+    --nasa-color-on-surface: #c9d1d9;
+    --nasa-color-on-surface-variant: #8b949e;
+  
+    /* === Background === */
+    --nasa-color-background: #0b0c10;
+    --nasa-color-on-background: #e6edf3;
+  
+    /* === Outline Colors === */
+    --nasa-color-outline: #4a5568;
+    --nasa-color-outline-variant: #718096;
+    --nasa-color-outline-focus: var(--nasa-color-primary);
+  
+    /* === Background Pattern === */
+    --nasa-background-image: url('/assets/backgrounds/nasa-stars-pattern.svg');
+  
+    /* Section Variables */
+    --nasa-section-radius: 1rem;       /* Tailwind: rounded-2xl */
+    --nasa-section-padding: 1.25rem;   /* Tailwind: p-5 */
+    --nasa-section-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* Deep shadow */
+  
+    /* Header Section Variables */
+    --nasa-header-size: 1.875rem;         /* Tailwind: text-3xl */
+    --nasa-header-gap: 0.75rem;
+    --nasa-header-margin-bottom: 1.5rem;
+    --nasa-header-weight: 500;
+  
+    /* Header Section Center variables */
+    --nasa-header-center-size: 1.875rem;
+    --nasa-header-center-wight: 700;
+    --nasa-header-center-margin-bottom: 1.75rem;
+    
 }
