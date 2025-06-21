@@ -146,4 +146,79 @@
     --nasa-header-center-wight: 700;
     --nasa-header-center-margin-bottom: 1.75rem;
     
+    /* ===================================== */
+    /* === TROY - Ancient City Theme === */
+    /* ===================================== */
+    
+    /* === Color System === */
+    --troy-color-primary: #b45309;
+    --troy-color-primary-light: #d97706;
+    --troy-color-primary-dark: #92400e;
+    --troy-color-on-primary: #ffffff;
+  
+    --troy-color-secondary: #a16207;
+    --troy-color-secondary-light: #ca8a04;
+    --troy-color-secondary-dark: #854d0e;
+    --troy-color-on-secondary: #ffffff;
+  
+    --troy-color-tertiary: #78716c;
+    --troy-color-tertiary-light: #a8a29e;
+    --troy-color-tertiary-dark: #57534e;
+    --troy-color-on-tertiary: #ffffff;
+  
+    --troy-color-error: #dc2626;
+    --troy-color-error-light: #ef4444;
+    --troy-color-error-dark: #b91c1c;
+    --troy-color-on-error: #ffffff;
+  
+    --troy-color-success: #16a34a;
+    --troy-color-success-light: #22c55e;
+    --troy-color-success-dark: #15803d;
+    --troy-color-on-success: #ffffff;
+  
+    --troy-color-warning: #eab308;
+    --troy-color-warning-light: #facc15;
+    --troy-color-warning-dark: #ca8a04;
+    --troy-color-on-warning: #1c1917;
+  
+    --troy-color-info: #0369a1;
+    --troy-color-info-light: #0284c7;
+    --troy-color-info-dark: #075985;
+    --troy-color-on-info: #ffffff;
+  
+    /* === Surface Colors === */
+    --troy-color-surface: #fef7ed;
+    --troy-color-surface-variant: #fed7aa;
+    --troy-color-surface-container: #fdba74;
+    --troy-color-surface-container-high: #fb923c;
+    --troy-color-on-surface: #431407;
+    --troy-color-on-surface-variant: #9a3412;
+  
+    /* === Background === */
+    --troy-color-background: #fffbeb;
+    --troy-color-on-background: #451a03;
+  
+    /* === Outline Colors === */
+    --troy-color-outline: #d97706;
+    --troy-color-outline-variant: #fed7aa;
+    --troy-color-outline-focus: var(--troy-color-primary);
+  
+    /* === Background Pattern === */
+    --troy-background-image: url('/assets/backgrounds/ancient-troy-pattern.svg');
+    
+    /* Section Variables */
+    --troy-section-radius: 1.25rem;       /* Tailwind: rounded-3xl - slightly more rounded for ancient aesthetic */
+    --troy-section-padding: 1.5rem;       /* Tailwind: p-6 - more generous padding */
+    --troy-section-shadow: 0 25px 50px -12px rgba(67, 20, 7, 0.2); /* Warm bronze themed shadow */
+    
+    /* Header Section Variables */
+    --troy-header-size: 2rem;              /* Tailwind: text-4xl - larger for ancient grandeur */
+    --troy-header-gap: 0.875rem;
+    --troy-header-margin-bottom: 1.75rem;
+    --troy-header-weight: 600;             /* Bolder for ancient authority */
+  
+    /* Header Section Center variables */
+    --troy-header-center-size: 2.25rem;    /* Tailwind: text-4xl - even larger for center headers */
+    --troy-header-center-weight: 800;      /* Very bold for central importance */
+    --troy-header-center-margin-bottom: 2rem; /* More space for dramatic effect */
 }
