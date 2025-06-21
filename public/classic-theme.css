@@ -118,7 +118,7 @@
   --nasa-color-on-info: #ffffff;
 
   /* === Surface Colors === */
-  --nasa-color-surface: #f0f4f8;
+  --nasa-color-surface: cyan;
   --nasa-color-surface-variant: #e1e8ed;
   --nasa-color-surface-container: #d1dae0;
   --nasa-color-surface-container-high: #b8c5ce;
